@@ -1,0 +1,42 @@
+*
+{
+    box-sizing: border-box;
+}
+
+.body-container
+{
+    display: flex;
+    flex-direction: column;align-items: center;
+}
+
+.title
+{
+    font-weight: 700;
+    font-size: 96px;
+    margin-bottom: 175px;
+}
+
+.container
+{
+    width: 379px;
+    height: 404px;
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>div
+{
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+}
+
+.container>div:nth-child(16n + 1)
+{
+    width: 100%;
+    border: 0;
+    height: 0;
+}
