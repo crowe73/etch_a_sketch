@@ -1,10 +1,18 @@
 *
 {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body
+{
+    min-height: 100vh;
 }
 
 .body-container
 {
+    border: 2px solid red;
     display: flex;
     flex-direction: column;align-items: center;
 }
@@ -16,7 +24,7 @@
     margin-bottom: 175px;
 }
 
-.container
+.grid-container
 {
     width: 379px;
     height: 404px;
@@ -27,14 +35,14 @@
     align-items: center;
 }
 
-.container>div
+.grid-container>div
 {
     border: 1px solid black;
     width: 25px;
     height: 25px;
 }
 
-.container>div:nth-child(16n + 1)
+.grid-container>div:nth-child(16n + 1)
 {
     width: 100%;
     border: 0;
