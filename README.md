@@ -9,3 +9,5 @@
 03/07/2022 23:12 - Added draw effect.
 
 03/09/2022 00:24 - Finished basic functionality.
+
+03/09/2022 22:16 - Refactored all files.

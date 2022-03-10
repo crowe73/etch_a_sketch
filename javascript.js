@@ -1,12 +1,8 @@
 const container = document.querySelector('.container');
-const button = document.createElement('button');
+const button = document.querySelector('.button-container');
 let size;
+let mouseDown = false;
 
-button.classList.add('clear-button');
-button.innerText = 'CLEAR';
-document.body.appendChild(button);
-
-var mouseDown = false;
 document.body.onmousedown = function()
 {
     mouseDown = true;
@@ -43,7 +39,12 @@ canvas(16);
 // Change cell color.
 function changeColor(e)
 {
-    if (mouseDown)
+    if (e.type === 'mouseover' && !mouseDown)
+    {
+        return;
+    }
+
+    else
     {
         //let color1 = Math.floor(Math.random() * 256);
         //let color2 = Math.floor(Math.random() * 256);
